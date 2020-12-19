@@ -1,5 +1,7 @@
 body {
     box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .container {
@@ -34,6 +36,8 @@ body {
     top: 3px;
     left: 3px;
 }
+
+
 .header__nav a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
@@ -41,13 +45,16 @@ body {
     font-size: 16px;
     margin-left: 33px;
     font-weight: 400;
+    display: inline-block;
 }
+
 .header__nav a:last-child {
     margin-left: 17px;
 }
 .header__nav a:hover {
     color: #202336;
-    font-weight: 500;
+    text-shadow: 0 0 0.65px;
+    transition: 0.3s;
 }
 
 .header__login span {
@@ -64,13 +71,15 @@ body {
 .header__login span:hover {
     color: #fb8f1d;
     background-color: #fff;
+    transition: 0.3s;
 }
 
 .destination__wrapper {
     max-width: 1415px;
     display: flex;
     justify-content: space-between;
-    margin-left: 118px;
+    margin: 0 auto;
+    padding-left: 50px;
 }
 
 /* section 1 */
@@ -129,7 +138,9 @@ body {
     background-position: right+20px center;
 }
 
-.destination__button button{
+.destination__button button,
+.balloons__button button,
+.guide__button button{
     width: 180px;
     background-color: #fb8f1d;
     border: 1px solid #fb8f1d;
@@ -143,8 +154,225 @@ body {
     margin-top: 15px;
     outline: none;
 }
+.balloons__button button,
+.guide__button button {
+    width: 160px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+}
 
-.destination__button button:active{
+.destination__button button:hover,
+.balloons__button button:hover,
+.guide__button button:hover{
     color: #fb8f1d;
     background-color: #fff;
+    transition: 0.3s;
+}
+
+.balloons__wrapper{
+    max-width: 1415px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.balloons__box {
+    align-self: center;
+    max-width: 440px;
+}
+.balloons__title,
+.guide__title {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.balloons__text,
+.guide__text {
+    color: #7D7987;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 40px;
+}
+.wrapper {
+    max-width: 1150px;
+    margin: 250px auto 0;
+}
+.cities__features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.cities__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+}
+.cities__viewall a{
+    text-decoration: none;
+    color: #FB8F1D;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+}
+.cities__viewall  span{
+    margin-left: 10px;
+}
+.cities__box {
+    display: flex;
+    justify-content: space-between;
+}
+.cities__content {
+    position: relative;
+}
+
+.cities__img  img{
+    border-radius: 9px 9px 9px 0;
+}
+.cities__place {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 0 7px 0 0;
+    padding-top: 10px;
+    color: #042521;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.cities__place span{
+    color: #80918E;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.guide__container{
+    display: flex;
+    justify-content: space-between;
+}
+.guide__box {
+    max-width: 420px;
+    align-self: center;
+}
+.guide__title {
+    margin-bottom: 30px;
+}
+.guide__text {
+    margin-bottom: 40px;
+}
+
+.reviews__title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.reviews__slide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__box{
+    max-width: 450px;
+    align-self: center;
+}
+
+.reviews__stars{
+    margin-left: -8px;
+    margin-bottom: 40px;
+}
+
+.reviews__stars img{
+    margin-left: 8px;
+}
+
+.reviews__comment{
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    margin-bottom: 45px;
+}
+
+.reviwes__name{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+
+.reviews__work{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 0.85);
+}
+.reviews__img{
+    position: relative;
+}
+
+.reviews__img img{
+    border-radius: 15px;
+}
+
+.div__slided{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    width: 130px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 17px 0 0 0;
+}
+
+.swiper-button-next{
+    margin-right: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    font-family: "Inter", sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #000;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.swiper-button-next{
+    margin-top: -13px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 23px;
+    top: 39px;
+    right: auto;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -10px;
+    left: auto;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
 }
