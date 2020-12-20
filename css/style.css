@@ -37,7 +37,6 @@ body {
     left: 3px;
 }
 
-
 .header__nav a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
@@ -85,7 +84,7 @@ body {
 /* section 1 */
 
 .destination__title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
@@ -102,7 +101,7 @@ body {
     position: relative;
 }
 
-.destination__finder::after{
+.destination__finder::after {
     content: "";
     height: 2px;
     width: 32px;
@@ -112,23 +111,23 @@ body {
     bottom: 0;
 }
 
-.destination__form{
+.destination__form {
     max-width: 480px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.destination__form select{
+.destination__form select {
     width: 220px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 32px;
-    color: #4A4C53;
+    color: #4a4c53;
     padding: 12px 0 12px 30px;
     margin-bottom: 35px;
-    border: 1px solid #AFB0B9;
+    border: 1px solid #afb0b9;
     border-radius: 7px;
     appearance: none;
     -moz-appearance: none;
@@ -140,19 +139,20 @@ body {
 
 .destination__button button,
 .balloons__button button,
-.guide__button button{
+.guide__button button {
     width: 180px;
     background-color: #fb8f1d;
     border: 1px solid #fb8f1d;
     border-radius: 10px;
     color: #fff;
     padding: 10px 0;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
     margin-top: 15px;
     outline: none;
+    cursor: pointer;
 }
 .balloons__button button,
 .guide__button button {
@@ -164,13 +164,13 @@ body {
 
 .destination__button button:hover,
 .balloons__button button:hover,
-.guide__button button:hover{
+.guide__button button:hover {
     color: #fb8f1d;
     background-color: #fff;
     transition: 0.3s;
 }
 
-.balloons__wrapper{
+.balloons__wrapper {
     max-width: 1415px;
     display: flex;
     justify-content: space-around;
@@ -187,17 +187,17 @@ body {
     font-size: 36px;
     line-height: 50px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     color: #000000;
     margin-bottom: 35px;
 }
 .balloons__text,
 .guide__text {
-    color: #7D7987;
+    color: #7d7987;
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     margin-bottom: 40px;
 }
 .wrapper {
@@ -209,23 +209,36 @@ body {
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.cities__title {
-    font-family: 'Playfair Display', serif;
+.cities__title,
+.trends__title {
+    font-family: "Playfair Display", serif;
     font-size: 36px;
     line-height: 50px;
     font-weight: 700;
 }
-.cities__viewall a{
+.cities__viewall a,
+.trends__viewall a {
     text-decoration: none;
-    color: #FB8F1D;
+    color: #fb8f1d;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 17px;
     line-height: 60px;
 }
-.cities__viewall  span{
-    margin-left: 10px;
+.cities__viewall a:hover,
+.trends__viewall a:hover{
+    text-decoration: underline;
 }
+.cities__viewall span,
+.trends__viewall span {
+    margin-left: 10px;
+    color: #fb8f1d;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+}
+
 .cities__box {
     display: flex;
     justify-content: space-between;
@@ -234,7 +247,7 @@ body {
     position: relative;
 }
 
-.cities__img  img{
+.cities__img img {
     border-radius: 9px 9px 9px 0;
 }
 .cities__place {
@@ -252,14 +265,14 @@ body {
     line-height: 25px;
 }
 
-.cities__place span{
-    color: #80918E;
+.cities__place span {
+    color: #80918e;
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
 }
 
-.guide__container{
+.guide__container {
     display: flex;
     justify-content: space-between;
 }
@@ -274,35 +287,35 @@ body {
     margin-bottom: 40px;
 }
 
-.reviews__title{
-    font-family: 'Playfair Display', serif;
+.reviews__title {
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
     margin-bottom: 60px;
 }
 
-.reviews__slide{
+.reviews__slide {
     display: flex;
     justify-content: space-between;
 }
 
-.reviews__box{
+.reviews__box {
     max-width: 450px;
     align-self: center;
 }
 
-.reviews__stars{
+.reviews__stars {
     margin-left: -8px;
     margin-bottom: 40px;
 }
 
-.reviews__stars img{
+.reviews__stars img {
     margin-left: 8px;
 }
 
-.reviews__comment{
-    font-family: 'Mulish', sans-serif;
+.reviews__comment {
+    font-family: "Mulish", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -310,7 +323,7 @@ body {
     margin-bottom: 45px;
 }
 
-.reviwes__name{
+.reviwes__name {
     font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -318,7 +331,7 @@ body {
     letter-spacing: 0em;
 }
 
-.reviews__work{
+.reviews__work {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -326,15 +339,16 @@ body {
     letter-spacing: 0em;
     color: rgba(0, 0, 0, 0.85);
 }
-.reviews__img{
+.reviews__img {
     position: relative;
+    margin-right: 80px;
 }
 
-.reviews__img img{
+.reviews__img img {
     border-radius: 15px;
 }
 
-.div__slided{
+.div__slided {
     display: block;
     position: absolute;
     bottom: 0;
@@ -345,12 +359,12 @@ body {
     border-radius: 17px 0 0 0;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     margin-right: 15px;
 }
 
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
     font-family: "Inter", sans-serif;
     color: #000;
     font-size: 18px;
@@ -360,19 +374,151 @@ body {
     height: 36px;
     border-radius: 50%;
 }
-.swiper-button-next{
+.swiper-button-next {
     margin-top: -13px;
 }
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
     left: 23px;
     top: 39px;
     right: auto;
 }
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
     right: -10px;
     left: auto;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
     display: none;
+}
+
+.trends__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends__box-element {
+    max-width: 261px;
+}
+
+.trends__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    font-family: "Inter", sans-serif;
+}
+
+.trends__box-img {
+    height: 230px;
+    overflow: hidden;
+}
+.trends__box-img img {
+    border-radius: 12px 12px 0 0;
+}
+.trends__box-suptitle {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.trends__box-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #7d7987;
+    margin-top: 20px;
+}
+
+.trends__box-more{
+    margin-top: 25px;
+}
+
+.trends__box-more a {
+    text-decoration: none;
+    color: #fb8f1d;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.trends__box-more a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    margin-top: 250px;
+}
+
+.footer .container{
+    background-color: #F9F9FB;
+}
+
+.footer__wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.footer__inner {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.footer__about{
+    width: 40%;
+}
+
+.footer__about-text{
+    max-width: 300px;
+    margin-top: 28px;
+}
+.footer__about-text,
+.footer__about-year {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #848484;
+}
+.footer__about-year {
+    max-width: 338px;
+    font-size: 17px;
+    margin-top: 65px;
+}
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer__subtitle {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 60px;
+}
+.footer__links a{
+    display: block;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+}
+.footer__links a:hover{
+text-decoration: underline;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+.footer__contacts-img {
+    margin-left: 30px;
+    align-self: center;
 }
