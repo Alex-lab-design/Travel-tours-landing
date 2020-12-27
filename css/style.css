@@ -5,8 +5,9 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1630px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 .header__wrapper {
     max-width: 1360px;
@@ -15,6 +16,9 @@ body {
     justify-content: space-between;
     margin-top: 35px;
     margin-bottom: 75px;
+}
+.button{
+    display: none;
 }
 .logo__img {
     display: block;
@@ -449,6 +453,7 @@ body {
 
 .footer{
     margin-top: 250px;
+    background-color: #F9F9FB;
 }
 
 .footer .container{
