@@ -24,16 +24,16 @@
                         <div class="img__inside"></div>
                     </div>
                 </a>
-                    <button class="button"><span></span></button>
+                <button class="button"><span></span></button>
                 <div class="header__nav">
                     <div class="header__nav-list">
-                    <a href="#">Home</a>
-                    <a href="#">Destinations</a>
-                    <a href="#">About</a>
-                    <a href="#">Partner</a>
-                    <a class="header__login" href="#"><span>Login</span></a>
-                    <a class="header__login" href="#"><span>Register</span></a>
-                </div>
+                        <a href="#">Home</a>
+                        <a href="#">Destinations</a>
+                        <a href="#">About</a>
+                        <a href="#">Partner</a>
+                        <a class="header__login" href="#"><span>Login</span></a>
+                        <a class="header__login" href="#"><span>Register</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,13 +82,13 @@
                         </div>
                     </form>
                 </div>
-            <div class="destination__image">
-                <img src="img/explorer.png" alt="eplorer">
+                <div class="destination__image">
+                    <img src="img/explorer.png" alt="eplorer">
+                </div>
             </div>
         </div>
-        </div>
     </section>
-<!-- 
+
     <section class="balloons">
         <div class="container">
             <div class="balloons__wrapper">
@@ -124,40 +124,48 @@
                     </div>
                 </div>
                 <div class="cities__box">
-                    <div class="cities__content">
-                        <div class="cities__img">
-                            <img src="img/city-img1.png" alt="Raja Ampat">
-                        </div>
-                        <div class="cities__place">
-                            Raja Ampat
-                            <span>Indonesia</span>
-                        </div>
-                    </div>
-                    <div class="cities__content">
-                        <div class="cities__img">
-                            <img src="img/city-img2.png" alt="Raja Ampat">
-                        </div>
-                        <div class="cities__place">
-                            Fanjingshan
-                            <span>China</span>
+                    <div class="cities__align">
+                        <div class="cities__content">
+                            <div class="cities__img">
+                                <img src="img/city-img1.png" alt="Raja Ampat">
+                            </div>
+                            <div class="cities__place">
+                                Raja Ampat
+                                <span>Indonesia</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cities__content">
-                        <div class="cities__img">
-                            <img src="img/city-img3.png" alt="Raja Ampat">
-                        </div>
-                        <div class="cities__place">
-                            Vevey
-                            <span>Switzerland</span>
+                    <div class="cities__align">
+                        <div class="cities__content">
+                            <div class="cities__img">
+                                <img src="img/city-img2.png" alt="Raja Ampat">
+                            </div>
+                            <div class="cities__place">
+                                Fanjingshan
+                                <span>China</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cities__content">
-                        <div class="cities__img">
-                            <img src="img/city-img4.png" alt="Raja Ampat">
+                    <div class="cities__align">
+                        <div class="cities__content">
+                            <div class="cities__img">
+                                <img src="img/city-img3.png" alt="Raja Ampat">
+                            </div>
+                            <div class="cities__place">
+                                Vevey
+                                <span>Switzerland</span>
+                            </div>
                         </div>
-                        <div class="cities__place">
-                            Skadar
-                            <span>Montenegro</span>
+                    </div>
+                    <div class="cities__align">
+                        <div class="cities__content">
+                            <div class="cities__img">
+                                <img src="img/city-img4.png" alt="Raja Ampat">
+                            </div>
+                            <div class="cities__place">
+                                Skadar
+                                <span>Montenegro</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +230,9 @@
                                     </div>
                                 </div>
                                 <div class="reviews__img">
-                                    <img src="img/reviewer1.png" alt="reviewer1">
+                                    <div class="reviews__photo">
+                                        <img src="img/reviewer1.png" alt="reviewer1">
+                                    </div>
                                     <div class="div__slided">
                                         <div class="prev swiper-button-prev"><img src="img/vector-left.svg" alt="">
                                         </div>
@@ -254,7 +264,9 @@
                                     </div>
                                 </div>
                                 <div class="reviews__img">
-                                    <img src="img/reviewer1.png" alt="reviewer1">
+                                    <div class="reviews__photo">
+                                        <img src="img/reviewer1.png" alt="reviewer1">
+                                    </div>
                                     <div class="div__slided">
                                         <div class="prev swiper-button-prev"><img src="img/vector-left.svg" alt="">
                                         </div>
@@ -286,7 +298,9 @@
                                     </div>
                                 </div>
                                 <div class="reviews__img">
-                                    <img src="img/reviewer1.png" alt="reviewer1">
+                                    <div class="reviews__photo">
+                                        <img src="img/reviewer1.png" alt="reviewer1">
+                                    </div>
                                     <div class="div__slided">
                                         <div class="prev swiper-button-prev"><img src="img/vector-left.svg" alt="">
                                         </div>
@@ -301,7 +315,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="trends">
         <div class="container">
             <div class="wrapper">
@@ -386,6 +400,7 @@
     </section>
 
     <footer class="footer">
+        <div class="footer__container">
             <div class="footer__wrapper">
                 <div class="footer__inner">
                     <div class="footer__about">
@@ -406,11 +421,11 @@
                         </div>
                     </div>
                     <div class="footer__box">
-                        <div class="footer__block">
-                            <div class="footer__subtitle">
+                        <div class="footer__block" id="accordeon">
+                            <div class="footer__subtitle acc-head">
                                 Destinations
                             </div>
-                            <div class="footer__links">
+                            <div class="footer__links acc-body">
                                 <a href="#">Africa</a>
                                 <a href="#">Antarctica</a>
                                 <a href="#">Asia</a>
@@ -418,11 +433,11 @@
                                 <a href="#">America</a>
                             </div>
                         </div>
-                        <div class="footer__block">
-                            <div class="footer__subtitle">
+                        <div class="footer__block" id="accordeon">
+                            <div class="footer__subtitle acc-head">
                                 Shop
                             </div>
-                            <div class="footer__links">
+                            <div class="footer__links acc-body">
                                 <a href="#">Destination Guides</a>
                                 <a href="#">Pictorial & Gifts</a>
                                 <a href="#">Special Offers</a>
@@ -430,11 +445,11 @@
                                 <a href="#">FAQs</a>
                             </div>
                         </div>
-                        <div class="footer__block">
-                            <div class="footer__subtitle">
+                        <div class="footer__block" id="accordeon">
+                            <div class="footer__subtitle acc-head">
                                 Interests
                             </div>
-                            <div class="footer__links">
+                            <div class="footer__links acc-body">
                                 <a href="#">Adventure Travel</a>
                                 <a href="#">Art And Culture</a>
                                 <a href="#">Wildlife And Nature</a>
@@ -463,12 +478,14 @@
                     </div>
                 </div>
         </div>
+    </div>
     </footer>
--->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/acc.js"></script>
 </body>
 
 </html>

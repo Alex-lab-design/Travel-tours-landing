@@ -2,10 +2,16 @@
     .destination__wrapper {
         padding-left: 0;
     }
+    .footer__container{
+        padding: 15px;
+    }
 }
 @media (max-width: 1220px) {
-    .destination__image img{
+    .destination__image img, .baloons__img img, .guide__img img {
         width: 580px;
+    }
+    .wrapper {
+        margin: 200px auto 0;
     }
 }
 @media (max-width: 1120px) {
@@ -32,6 +38,77 @@
         width: 540px;
         margin-top: 30px;
     }
+    .balloons__wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 75px;
+    }
+    .baloons__img{
+        order: 2;
+    }
+    .balloons__box {
+        max-width: 520px;
+    }
+    .cities__features, .trends__head{
+        max-width: 520px;
+        margin: 0 auto 60px;
+    }
+    .cities__box, .trends__box{
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .cities__content {
+        margin-bottom: 12px;
+    }
+    .wrapper {
+        margin: 70px auto 0;
+    }
+    .guide__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .guide__box, .reviews__title {
+        max-width: 520px;
+    }
+    .reviews__title{
+        margin: 0 auto 40px;
+    }
+    .reviews__slide{
+        flex-direction: column;
+    }
+    .reviews__box {
+        max-width: 520px;
+        order: 2;
+    }
+    .reviews__img{
+        margin: 0 auto;
+    }
+    .reviews__stars{
+        margin: 20px 0;
+    }
+    .reviews__comment{
+        margin-bottom: 15px;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1000px){
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__about, .footer__box{
+    width: 520px;
+    }
+    .footer__about-year{
+        margin-top: 30px;
+    }
+    .footer__inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 780px) {
     .header__wrapper {
@@ -48,7 +125,7 @@
         transform: translateY(0%);
         background-color: #fff;
         width: 100%;
-        height: 100%;
+        height: 120%;
     }
     .body--active{
         overflow: hidden;
@@ -58,7 +135,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 85%;
     }
     .logo__img {
         order: 2;
@@ -115,12 +192,57 @@
     .header__wrapper{
         margin-bottom: 50px;
     }
+        .balloons__box {
+        max-width: 480px;
+    }
+    .balloons__title, .guide__title, .cities__title, .trends__title, .reviews__title {
+    font-size: 33px;
+    line-height: 40px;
+    }
+    .cities__features, .trends__head{
+        align-items: center;
+    }
+    .cities__viewall a, .trends__viewall a {
+    line-height: 24px;
+}
+.footer__inner{
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: start;
+}
+    .footer__about, .footer__box {
+        width: fit-content;
+    }
+    .footer__box{
+        flex-direction: column;
+    }
+    .footer__subtitle{
+        cursor: pointer;
+    }
+    .acc-body{
+        display: none;
+    }
+    /* .footer__box {
+        align-items: center;
+        align-self: center;
+    } */
+}
+@media (max-width: 680px){
+    .reviews__comment{
+        font-size: 21px;
+    }
+    .reviwes__name{
+        font-size: 20px;
+    }
+    .reviews__work{
+        font-size: 16px;
+    }
 }
 @media (max-width: 600px){
     .header__wrapper{
         margin-bottom: 35px;
     }
-    .destination__image img{
+    .destination__image img, .baloons__img img, .guide__img img{
         width: 400px;
     }
     .destination__title {
@@ -131,13 +253,35 @@
     .destination__button button{
         margin-top: 0;
     }
+    .balloons__title, .guide__title, .cities__title, .trends__title, .reviews__title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .balloons__title, .guide__title, .reviews__title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cities__box, .trends__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trends__box-more{
+        margin: 0 0 20px 0;
+    }
 }
-@media (max-width: 479px){
+@media (max-width: 480px){
     .destination__form select {
         width: 200px;
     }
     .destination__finder{
         padding-bottom: 0;
+    }
+    .balloons__text, .guide__text {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .cities__features, .trends__head{
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 440px){
@@ -151,7 +295,49 @@
     .destination__button button{
         width: 100%;
     }
-    .destination__image img{
+    .balloons__button button, .guide__button button{
+        width: 80%;
+    }
+    .balloons__button, .guide__button{
+        text-align: center;
+    }
+    .destination__image img, .baloons__img img, .guide__img img{
         width: 300px;
+        margin-top: 15px;
+    }
+
+    .balloons__text, .guide__text {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .balloons__title, .guide__title, .reviews__title, .trends__title {
+        font-size: 24px;
+        line-height: 30px;
+}
+    .cities__features, .trends__head{
+        margin-bottom: 15px;
+        flex-direction: column;
+}
+    .reviews__photo img{
+        width: 300px;
+}
+.reviews__stars{
+    text-align: center;
+}
+.reviews__comment{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.reviwes__name{
+    font-size: 17px;
+}
+.reviews__work{
+    font-size: 16px;
+}
+}
+@media (max-width: 340px){
+    .reviews__photo img{
+        width: 290px;
     }
 }
